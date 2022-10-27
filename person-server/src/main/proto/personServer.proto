@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.fabriciolfj.github";
+option java_outer_classname = "PersonClient";
+option objc_class_prefix = "HLW";
+
+package com.fabriciolfj.github;
+
+service PersonService {
+  rpc send (PersonRequest) returns (PersonResponse) {}
+}
+
+message PersonRequest {
+  string name = 1;
+  string document = 2;
+}
+
+message PersonResponse {
+  string code = 1;
+}

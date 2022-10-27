@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: personClient
+grpc:
+  server:
+    port: 8080
+  client:
+    plaintext: true
+    max-retry-attempts: 10
+
+server:
+  host: localhost
+  port: 5001
